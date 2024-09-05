@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+
+    <style>
+        /* Seletor universal */
+        * {
+            margin: 18px;
+        }
+
+        /* Seletor de tipo, que aplica em uma tag específica */
+        p {
+            color: rgb(100, 61, 255);
+        }
+
+        /* Seletor e classe */
+        .paragrafo {
+            background-color: rgb(191, 61, 255);
+            /* margin: 10px; - Aplica em todas as margens */
+            /* margin: 10px 40px; - Aplica nas margens 'laterais' e 'superior e inferior'*/
+            /* margin: 10px 20px 30px 40px; Aplica margens top, right, bottom, left  */
+            margin-left: 10px;
+            /* Alinhamento do texto */
+            text-align: center;
+        }
+
+        /* Imagem*/
+        .imagem {
+            width: 150px;
+            height: 100%;
+        }
+    </style>
+</head>
+<!-- Aplicando css inline cor de fundo -->
+
+<body style="background-color: rgb(202, 203, 252);">
+    Hello, world!
+    <!-- Títulos de nível 1 ao 6 -->
+    <h1>Cabeçalho de nível 1</h1>
+    <h2>Cabeçalho de nível 2</h2>
+    <h3>Cabeçalho de nível 3</h3>
+    <h4>Cabeçalho de nível 4</h4>
+    <h5>Cabeçalho de nível 5</h5>
+    <h6>Cabeçalho de nível 6</h6>
+
+    <!-- Insere uma linha na horizontal -->
+    <hr>
+    <!-- A tag 'p' insere um novo paragrafro -->
+    <p>Este é um parágrafro</p>
+    <p> Outro parágrafro</p>
+    <!--Não existe essa de dar espaço ou pular para a linha de baixo, deixe de preguiça, aqui não-->
+    <hr>
+    <p>Este é um texto muito grande, <br>
+        que eu desejo quebrar a linha</p>
+
+    <!-- Inserir um link para abrir uma página -->
+    <a href="https://www.netflix.com/browse"> Página da netflix</a>
+    <a href="https://www.sesisp.org.br">Página do SESI</a>
+
+    <!-- Link com atributo _blank para abir em outra janela -->
+    <a href="https://www.sp.senai.br/" target="_blank">Página SENAI</a>
+    <hr>
+
+    <!-- Tag img para adicionar uma imagem,
+          o atributo src e preenchido com o caminho da imagem -->
+    <img src="https://i.pinimg.com/564x/4d/49/6f/4d496fdd9df3fb2aea20f265097da253.jpg">
+
+    <img src="./img/gravity.gif">
+
+    <p> parágrafro com caracter &lt;br&gt;</p>
+    <p>&reg; &copy; &trade; &euro; &pound; &yen; &cent;; &delta; &uarr;</p>
+
+    <!-- Para inserir emoji use o hexadecimal do site emojipedia.org e o código vai depois do &#x -->
+    <p>Inserind um emoji &#x1F60A &#x2764</p>
+
+    <!-- Tags para formatação e enfatização do texto -->
+    <b>Texto em negrito</b><br>
+    <strong>Texto importante</strong><br>
+    <h1><i>H1 italico</i></h1><br>
+    <em>Texto enfatizado</em><br>
+    <mark>Texto Marcado</mark><br> <!--tipo de marca texto-->
+    <p>Texto<small>Menor</small></p><br> <!--usado para diminuir a letra mais um pouco-->
+    <del>Texto Excluido</del><br> <!--texto taxado-->
+    <ins>texto Inserido</ins> <!--texto sublinhado-->
+    <p>4<sub>2</sub></p> <!--texto subscrito-->
+    <p>3<sub>3</sub></p>
+    <u>Texto sublinhado</u><br>
+
+    <!-- Aplicando Link a uma imagem -->
+    <a href="https://www.sesisp.org.br/" target="_blank"><img src="./img/Sesi-SP.jpg" width="380" alt=""></a>
+
+    <p style="font-size: 25px;">Vídeos do youtube</p>
+    <!-- Ou x larger, etc -->
+    <iframe width="866" height="487" src="https://www.youtube.com/embed/vFHBOKa_ZG0"
+        title="Sleep Token - Take Me Back To Eden" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Aplicando css interno -->
+    <p class="paragrafo">
+        Coraline
+        <img class="imagem" src="./img/coraline.jfif" alt="">
+    </p>
+    <hr>
+    <!-- Listas -->
+    <!-- Listas Ordenadas -->
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar Banhor</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a escola no horário</li>
+    </ol><br>
+    <!-- Lista ordenada com numero romano misnusculo -->
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar Banhor</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a escola no horário</li>
+    </ol><br>
+    <!-- Listas ordenadas com letras maiusculas -->
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar Banhor</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a escola no horário</li>
+    </ol><br>
+    <!-- Lista não ordenada -->
+    <ul>
+        <li>Carvão</li>
+        <li>Carvaão</li>
+        <li>Bebidas</li>
+        <li>Arroz</li>
+    </ul>
+    <!-- Lista dentro de lista  -->
+    <ul>
+        <li>Carne
+            <ul>
+                <li>Picanha</li>
+                <li>Cupim</li>
+                <li>Ponta de Peito</li>
+            </ul>
+        </li>
+        <li>Bebidas</li>
+        <li>Arroz</li>
+    </ul>
+    <!-- Lista Predefinida -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilização do site</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação</dd>
+    </dl>
+</body>
+
+</html>
+
+<!-- aperta '!' e 'enter' já gera tudo isso -->
+<!-- Alt + shift + f corrige a identação -->
