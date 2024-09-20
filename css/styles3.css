@@ -1,51 +1,65 @@
 * {
     margin: 18px;
 }
+
 p {
     color: rgb(100, 61, 255);
 }
+
 .paragrafo {
     background-color: rgb(118, 120, 216);
     margin-left: 10px;
     text-align: center;
 }
+
 .imagem {
     width: 150px;
     height: 100%;
 }
+
 body {
-    background-color: aquamarine;
+    background-color: rgb(216, 229, 249);
 }
-.tabela{
+
+.tabela {
     border-collapse: collapse;
     width: 100%;
 }
-.cabeçalho, .celula{
+
+.cabeçalho,
+.celula {
     border: 1.5px solid rgb(131, 129, 129);
     padding: 4px;
     text-align: center;
     color: black;
     background-color: rgb(185, 186, 250);
 }
-.cabeçalho2{
+
+.cabeçalho2 {
     background-color: rgb(140, 206, 251);
 }
-.cabecalho2, .celul{
+
+.cabecalho2,
+.celul {
     border: 0.5px solid rgb(79, 78, 78);
     padding: 4px;
     text-align: center;
     color: rgb(0, 0, 0);
     background-color: rgb(195, 229, 251);
 }
-.texto{
+
+.texto {
     text-align: center;
     color: black;
 }
+
 .gallery {
-    width: 100%; /* isso é padrão para elementos div */
-    
-  }
-  
-  .gallery .image {
-    width: 99%; /* usei 80% como exemplo, porém vale qualquer valor abaixo de 100% */
-  }
+    width: 100%;
+    /* isso é padrão para elementos div */
+
+}
+
+.gallery .image {
+    width: 99%;
+    /* usei 80% como exemplo, porém vale qualquer valor abaixo de 100% */
+}

@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cadastro de Usuários</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../../css/formulários.css"
+  </head>
+  <body>
+    <h1 class="texto">Cadastro</h1>
+    <h2 class="texto">Cadastre-se abaixo</h2>
+    <form class="formulario">
+      <div style="width: 30%; margin: 0px auto">
+        <label>Nome</label>
+        <input type="text" placeholder="nome completo" class="nome"/><br/><br/>
+        <label>Email</label>
+        <input type="type" placeholder="Digite aqui seu email" class="email"/><br/><br/>
+        <label>Data de Nascimnto</label>
+        <input type="date" class="cadastrais"/><br/><br/>
+        <label>Telefone📞</label>
+        <input type="type" placeholder="Digite aqui seu telefone" class="cadastrais"/><br /><br/>
+        <label>Sexo</label>
+        <select class="seleção">
+          <option value="Feminino">Feminino</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Não Informado">Prefiro não informar</option></select><br /><br/>
+      </div>
+      <fieldset
+        style="width: 50%; margin: 0px auto; border-color: rgb(177, 111, 239)">
+        <legend>Endereço</legend>
+        <label>Bairro</label>
+        <input type="type" class="endereço"/>
+        <label>Numero</label>
+        <input type="type" class="endereço"/><br/><br/>
+        <label>Cidade</label>
+        <input type="type" class="endereço"/>
+        <label>Estado</label>
+        <input type="type" class="endereço"/><br/>
+        <label>Complemento</label>
+        <input type="type" class="endereço"/>
+      </fieldset><br /><br/>
+      <div class="centro">
+        <label>Senha</label>
+        <input type="password" placeholder="insira aqui sua senha" class="senha"/>
+        <label>Confirmar Senha</label>
+        <input type="password" placeholder="insira aqui sua senha" class="senha"/><br/><br/>
+        <div style="width: 40%; margin: 0px auto">
+          <br/>
+          <a href="./login.html"><input type="submit" value="Cadastrar" class="botao"/></a>
+          <a href="./index.html"><input type="button" value="Cancelar" class="botao"/></a>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>

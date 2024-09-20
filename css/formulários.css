@@ -1,0 +1,125 @@
+* {
+    margin: 18px;
+    font-family: cursive;
+    border-radius: 5px;
+}
+
+p {
+    color: rgb(100, 61, 255);
+}
+
+.paragrafo {
+    background-color: rgb(118, 120, 216);
+    margin-left: 10px;
+    text-align: center;
+}
+
+.imagem {
+    width: 150px;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(216, 229, 249);
+}
+
+.texto {
+    text-align: center;
+    color: black;
+}
+
+.gallery {
+    width: 100%;
+    /* isso é padrão para elementos div */
+
+}
+
+.gallery .image {
+    width: 99%;
+    /* usei 80% como exemplo, porém vale qualquer valor abaixo de 100% */
+}
+
+.login {
+    text-align: center;
+    margin: auto;
+}
+
+.formulario {
+    background-color: rgb(206, 222, 247);
+    font-family: cursive;
+    font-size: small;
+}
+
+.input-nome {
+    /* remove a borda do elemento */
+    border: none;
+    border-radius: 5px;
+    border-left: 50;
+    /* define a opacidade do elemento */
+    opacity: 70%;
+}
+
+.botao {
+    background-color: rgba(195, 83, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: cursive;
+    font-size: small;
+    /* aplica sombra no texto posição x, y, blur e o rgba que se aplica com opacidade */
+    box-shadow: 0 2px 5px rgba(90, 16, 131, 0.8);
+}
+
+.email {
+    width: 300px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 2px solid rgb(177, 111, 239);
+}
+
+.seleção {
+    appearance: none;
+    width: 300px;
+    padding: 4px;
+    font-size: 16px;
+    color: #781fa5;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    /* sombra no input */
+    box-shadow: 0 2px 5px rgba(90, 16, 131, 0.8);
+}
+
+.nome {
+    width: 300px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 2px solid rgb(177, 111, 239);
+}
+
+.cadastrais {
+    width: 200px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 2px solid rgb(177, 111, 239);
+}
+.senha {
+    width: 170px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 2px solid rgb(177, 111, 239);
+}
+
+.centro {
+    width: 50%;
+     margin: 0px auto
+}
+
+.endereço {
+    border: 2px solid rgb(177, 111, 239);
+}
