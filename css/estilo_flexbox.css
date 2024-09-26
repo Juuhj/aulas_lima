@@ -24,3 +24,100 @@
     text-align: center;
     color: rgb(168, 104, 236);
 }
+
+.flex {
+    display: flex;
+    /* define a direção dos elementos */
+    flex-direction: column;
+}
+
+.flex > div > img {
+    height: 50px;
+    width: 50px;
+}
+
+.div-coluna {
+    height: 78px;
+    width: 60px;
+    background-color:  #e3d1fc;
+    /* Os abaixos foram adicionadas por puro perfeccionismo da minha parte
+    necessito dessa organização, desde as cores até o alinhamento no centro */
+    text-align: center;
+    color: rgb(168, 104, 236);
+    margin: 0 auto;
+    font-size: x-small;
+    font-family: cursive;
+}
+
+.secao {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    background-color: #e3d1fc;
+    /* Coloca um espaço entre os elementos */
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.secao-imagem {
+    width: 200px;
+    height: 200px;
+}
+
+.alinhar-esquerda {
+    display: flex;
+    flex-direction: row;
+    /* Alinha o elemento ao início */
+    justify-content: flex-start;
+}
+
+.alinhar-centro {
+    display: flex;
+    flex-direction: row;
+    /* Alinha os elementos ao centro */
+    justify-content: center;
+}
+
+.alinhar-direita {
+    display: flex;
+    flex-direction: row;
+    /* Alinha os elementos ao fim */
+    justify-content: flex-end;
+}
+
+.alinhar-entre {
+    display: flex;
+    flex-direction: row;
+    /* Aloca os elementos nas pontas e 
+    ajusta os elementos do centro */
+    justify-content: space-between;
+}
+
+.alinhar-redor {
+    display: flex;
+    flex-direction: row;
+    /* distribui os itens com espaço ao redor deles */
+    justify-content: space-around;
+}
+
+.alinhar-coluna {
+    display: flex;
+    flex-direction: column;
+    /* distribui os itens com espaço ao redor deles */
+    align-items: center;
+    width: 100%;
+    background-color: #e3d1fc;
+}
+
+.alinhar-itens-centro {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: #e3d1fc;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alinho {
+align-items: ;
+}
