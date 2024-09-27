@@ -106,15 +106,106 @@
     /* distribui os itens com espaço ao redor deles */
     align-items: center;
     width: 100%;
-    background-color: #e3d1fc;
+    background-color: #eae0f7;
 }
 
 .alinhar-itens-centro {
     display: flex;
     flex-direction: column;
     height: 200px;
-    background-color: #e3d1fc;
+    background-color: #eae0f7;
     align-items: center;
     justify-content: space-between;
 }
 
+.container-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Adiciona scroll na horizontaç  */
+    gap: 0.4rem;
+    height: 500px;
+}
+
+.card {
+    width: 300px;
+    height: 435px;
+    flex: 0 0 auto;  /* Evita que os cards encolham ou se ajustem automaticamente */
+    border: 1px solid hsl(196, 54%, 62%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px hsl(196, 85%, 77%);
+    font-family: cursive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    /* serve para criar um efeito hover, mudando a posição do card */
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(168, 216, 255, 0);
+}
+
+.cabecalho-card {
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo-card {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #8cb7fd;
+}
+
+.subtitulo-card {
+    margin: 0;
+    font-size: 1rem;
+    color: #7daefb;
+}
+
+.imagem-card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-card > img {
+    max-width: 100%; /* Mantem o limite maximo do tamanho do container */
+    height: 200px; /* Mantem a proporção da imagem */
+}
+
+.imagem-card > figcaption {
+    font-size: 0.8rem;
+    padding: 8px;
+    text-align: center;
+    color: #8cb7fd;
+}
+
+.conteudo-card {
+    padding: 10px;
+    background-color: #cadaf5;
+    text-align: center;
+    color: #ffffff;
+    /* color: #77a9f9; */
+}
+
+.rodape-card {
+    background-color: #8db7f9;
+    text-align: center;
+    padding: 6px;
+}
+
+.botao-card {
+    text-decoration: none; /* Remove a decoração de linha */
+    color: #fa8edf;
+    background-color: #77a9f9;
+    border-radius: 10px;
+    padding: 5px 6px;
+    /* permite definir largura e altura, alinha elementos na mesma linha */
+    display: inline-block;
+}
+
+.botao-card:hover {
+    background-color: #ffffff;
+    width: 150px;
+}

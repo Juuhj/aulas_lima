@@ -1,0 +1,22 @@
+/* Handlee */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+/* Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Assegura que padding e margin sejam incluidos nas dimensoes totais do elemento */
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: Dancing Script;
+    font-size: 2rem;
+}
+
+.menu {
+    font-family: handlee;
+    font-size: 1rem;
+}
