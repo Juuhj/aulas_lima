@@ -10,13 +10,88 @@
     /* Assegura que padding e margin sejam incluidos nas dimensoes totais do elemento */
     box-sizing: border-box;
 }
-
+body{
+    color: azure;
+    background-color: #040404;
+}
 .logo {
     font-family: Dancing Script;
     font-size: 2rem;
+    color: azure;
+    /* padding-right: 50px; */
 }
-
+a{
+    text-decoration: none;
+}
 .menu {
     font-family: handlee;
     font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.acessar {
+    color: azure;
+}
+li {
+    display: inline;
+    padding: 5px 5px;
+} 
+li{
+    list-style: none;
+}
+li > a{
+    color: azure;
+}
+.banner-cafe {
+    max-width: 1120px;
+    /* height: 60vh; */
+    margin: auto;
+}
+.banner-cafe >img {
+    width: 100%;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    opacity: 0.7;
+}
+
+.banner-novidades {
+    max-width: 1120px;
+    height: 60vh;
+    margin: auto;
+    padding: 0rem 2rem;
+    gap: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner-conteudo {
+    /* Organizamos o conteudo em coluna */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.banner-imagens {
+    /* Organizar o conteudo em uma coluna */
+    max-width: 45%;
+    /* Exibir as imagens em 4 colunas */
+    column-count: 4;
+}
+
+.banner-imagens > figure >img {
+    width: 100%;
+    border-radius: 5px;
 }
