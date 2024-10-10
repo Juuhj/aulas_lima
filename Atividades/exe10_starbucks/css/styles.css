@@ -1,0 +1,74 @@
+a{
+    text-decoration: none;
+}
+
+.menu {
+    font-family: handlee;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.1rem;
+    align-items: center;
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.1rem;
+}
+
+li {
+    display: inline;
+    padding: 5px 5px;
+} 
+li{
+    list-style: none;
+}
+li > a{
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    width: 3.5%;
+    height: 3.5%;
+}
+
+.logo2 {
+    width: 8%;
+    height: 8%;
+}
+
+.decor {
+    background-color: rgb(219, 236, 234);
+    display: flex;
+    justify-content: space-between;
+}
+
+.botão {
+    text-decoration: none; /* Remove a decoração de linha */
+    color: #1a2d0a;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 5px 5px;
+    /* permite definir largura e altura, alinha elementos na mesma linha */
+    display: inline-block;
+}
+
+.img {
+    width: 750px;
+    height: 450px;
+}
+
+.texto {
+    text-align: center;
+    align-items: center;
+}
+
+.sla {
+
+}
