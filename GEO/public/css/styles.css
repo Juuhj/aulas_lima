@@ -7,23 +7,22 @@
 }
 
 .logo{
-    font-family: Teko;
-    font-size: 2rem;
-    color: #9de26e;
+    margin:0.5cm;
 }
 
-/* .link {
+.logo img {
+    width: 200px;
+    height: 100%;
+
+}
+
+.link {
     text-decoration: none;
     color: #051b40;
 }
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    box-shadow: 0 2px 2px 2px #051b40;
-}
 
+/*
 ul {
     display: flex;
 }
@@ -191,7 +190,7 @@ div-hover {
     max-width: 45%;
 }
 
-.banner-novidades{
+.img-nv{
     max-width: 1120px;
     height: 60vh;
     margin: auto;
@@ -205,6 +204,8 @@ div-hover {
 .banner-imagens{
     max-width: 60%;
      column-count: 4;
+     flex-direction: column;
+     justify-content: space-between;
      
 
 }
@@ -216,23 +217,42 @@ div-hover {
     
 }
 
-*/Nathalia*/
+/*Nathalia*/
 nav{
+
     max-width: 1120px;
     width: 100%;
     margin: 0 auto;
     background-color: whitesmoke;
     padding: 10px;
-    color: black;
+    color: #051b40;
+    font-size: 3.5vh;
 }
 
-.menu{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
+.cabecalho{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   margin: auto;
+   position: sticky;
+   top: 0;
+   max-height: 95px;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+/* .imgPrincipal{
+    position:relative; width: 100%; height: 0; padding-top: 40.2635%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 5px; will-change: transform;
+} */
+
 ul{
     display: flex;
     gap: 1.5rem;
@@ -245,7 +265,7 @@ a{
 }
 li > a{
     color: black;
-    font-family: Teko;
+
 }
 .banner{
     max-width: 1120px;
@@ -255,19 +275,56 @@ li > a{
 }
 .banner > img {
     width: 100%;
-    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 0px 20px rgba(34, 21, 21, 0.5);
     border-radius: 2px;
     opacity: 0.7;
 }
 body{
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
+    color: rgb(6, 3, 3);
+    font-size: 2rem;
     text-decoration: none;
 }
 
 .rodape {
     background-color: white;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
+    font-size: 16px;
+    box-shadow: #051b4070;
 }
+
+.sof{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 40.2635%;
+    padding-bottom: 0;
+    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+    margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;
+}
+
+.sof2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    align-items: center;
+    font-size: 3vh;
+}
+
+/* estilização vi */
+
