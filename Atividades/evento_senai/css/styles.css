@@ -5,5 +5,5 @@
 .banner > img{
     width: 100%;
     height: auto;
-    object-fit: ;
+    object-fit: fill;
 }
