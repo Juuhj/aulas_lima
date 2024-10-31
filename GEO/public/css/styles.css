@@ -75,7 +75,7 @@ li {
     width: 300px;
     height: 340px;
     flex: 0 0 auto;  /* Evita que os cards encolham ou se ajustem automaticamente */
-    border: 1px solid #171c02;
+    border: 1px solid #0f1d0318;
     box-shadow: 0 4px 6px #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: white;
@@ -129,10 +129,11 @@ li {
 
 .conteudo-card {
     padding: 10px;
-    background-color: #072e6d;
+    background-color: #19066cd4;
     text-align: center;
     color: #ffffff;
     /* color: #77a9f9; */
+    /* #b8e30dbc */
 }
 
 .conteudo-card-rei {
