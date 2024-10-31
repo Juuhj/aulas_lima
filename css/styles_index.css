@@ -1,0 +1,21 @@
+.logo{
+    width: 60px;
+    object-fit: cover;
+}
+
+.sesi{
+    width: 30%;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery .image {
+    width: 99%;
+}
+
+.purple{
+    background-color: rgb(101, 3, 137) !important;
+    border: rgb(101, 3, 137) !important;
+}

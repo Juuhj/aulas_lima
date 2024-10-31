@@ -55,11 +55,8 @@ body {
 
 .gallery {
     width: 100%;
-    /* isso é padrão para elementos div */
-
 }
 
 .gallery .image {
     width: 99%;
-    /* usei 80% como exemplo, porém vale qualquer valor abaixo de 100% */
 }
