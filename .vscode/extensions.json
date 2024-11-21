@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "klyap.vscode-celestial-magic-girl-icon-theme"
+        "klyap.vscode-celestial-magic-girl-icon-theme",
+        "anbuselvanrocky.bootstrap5-vscode",
+        "blackboxapp.blackbox",
+        "sixth.sixth"
     ]
 }
