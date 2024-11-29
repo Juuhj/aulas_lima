@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    /* align-items: center; */
+}
