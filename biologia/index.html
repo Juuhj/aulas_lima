@@ -11,31 +11,30 @@
     <!-- linkar Ícones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
+  <!-- Seria legal se colocassemos o scroll reveal no nosso site, para que ele vá revelando os elementos conforme rolamos a tela -->
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </nav>
+      <nav class="navbar navbar-expand justify-content-center bg-light d-flex flex-column">
+        <div>
+          <h1 class="text-center color">BioResumo</h1>
+        </div>
+          <ul class="nav justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">DNA e RNA</a>
+                <a class="nav-link link-info active" aria-current="page" href="#dna_rna">DNA e RNA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Síntese de Proteínas</a>
+                <a class="nav-link link-info" href="#Sintese_proteinas">Síntese de Proteínas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ciclo Celular</a>
+                <a class="nav-link link-info" href="#Ciclo_Celular">Ciclo Celular</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mitose e Meiose</a>
+                <a class="nav-link link-info" href="#Mitose_meiose">Mitose e Meiose</a>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
 
       <!-- Carousel -->
       <div id="carouselExample" class="carousel slide">
@@ -60,93 +59,198 @@
         </button>
       </div>
 
+      <!-- cards, precisamos retirar a borda ou deixa-la em branco,
+        tbm precisamos definir um limite máximo para os cards seguirem
+        todos o mesmo pradão.
+        Não se deve ter restrição de tamanho da tela aqui  -->
+      <section class="container d-flex gap-4">
+        <!-- Dna e Rna -->
+        <a href="#dna_rna" class="text-decoration-none ">
+          <div class="card" style="width: 18rem;">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">DNA e RNA</h5>
+            <p class="card-text text-center">Funções, síntese, formato, bases, entre outros</p>
+          </div>
+        </div></a>
+        <!-- Sintese de proteínas -->
+        <a href="#Sintese_proteinas" class="text-decoration-none">
+          <div class="card" style="width: 18rem;">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Síntese de Proteínas</h5>
+            <p class="card-text text-center">Processo de formação das proteínas realizado pelos ribossomos</p>
+          </div>
+        </div></a>
+        <!-- Ciclo Celular -->
+        <a href="#Ciclo_Celular" class="text-decoration-none">
+          <div class="card" style="width: 18rem;">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Ciclo Celular</h5>
+            <p class="card-text text-center">Interfase e Mitose</p>
+          </div>
+        </div></a>
+        <!-- Mitose e Meiose -->
+        <a href="#Mitose_meiose" class="text-decoration-none">
+          <div class="card" style="width: 18rem;">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Mitose e Meiose</h5>
+            <p class="card-text text-center">Comparação <br> Mitose - Meiose</p>
+          </div>
+        </div></a>
+    </section>
+
+      <span id="dna_rna">DNA e RNA</span>
       <section class="d-flex align-items-center w-100 mt-3">
         <div class="d-flex flex-column w-50 p-3 gap-4">
-            <h2 class="text-center">DNA - Ácido Desoxirribonucleico ou ADN</h2>
+            <h2>DNA - Ácido Desoxirribonucleico ou ADN</h2>
             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</span>
         </div>
      <img src="#" alt="" class="w-50">
     </section>
-    </section>
+    
     <section class="d-flex align-items-center w-100 mt-3">
      <img src="#" alt="" class="w-50">
      <div class="d-flex flex-column w-50 p-3 gap-4">
-         <h2 class="text-center">RNA - Ácido Ribonucleico ou ARN</h2>
+        <span>DNA e RNA</span>
+         <h2>RNA - Ácido Ribonucleico ou ARN</h2>
          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</span>
-         <a href="" class="btn btn-outline-primary w-25">Questões</a>
      </div>
     </section>
 
     <!-- Tipos de RNA -->
+     <!-- essa é a única parte que não deve ter a restrição de tamanho na tela,
+      quero que mantenha normal para que utilizemos o que o professor ensinou na aula passada
+      quando iniciei o site ele não havia ensinado ainda -->
     <section class="container">
-        <h2>Nossa Equipe</h2>
+        <h2 class="text-center">Tipos de RNA</h2>
         <div class="row mt-3">
-            <!-- Equipe de Desenvolvimento -->
+            <!-- Rna Mensageiro -->
              <div class="col-12 col-md-3 bg-light border border-2 border-primary rounded">
                 <h3 class="text-primary">RNA Mesageiro</h3>
                 <span>Use este espaço para inserir um trecho ou uma pré-visualização do seu texto principal. Você pode simplesmente adicionar o primeiro parágrafo ou criar um resumo.
-
                     Qualquer que seja sua escolha, não entregue tudo ainda. Afinal, você quer que leiam seu texto inteiro.</span>
                 <div><img src="#" alt=""></div>
                 </div>
-    
-            <!-- Equipe de Marketing -->
+            <!-- Rna Ribossômico -->
             <div class="col-12 col-md-6 bg-light border border-2 border-primary rounded">
                 <h3 class="text-primary">RNA Ribossômico</h3>
                 <div><img src="#" alt=""></div>
                 <span>Use este espaço para inserir um trecho ou uma pré-visualização do seu texto principal. Você pode simplesmente adicionar o primeiro parágrafo ou criar um resumo.
-
                     Qualquer que seja sua escolha, não entregue tudo ainda. Afinal, você quer que leiam seu texto inteiro.</span>
              </div>
-    
-            <!-- Equipe de Design-->
+            <!-- Rna Transportador-->
             <div class="col-12 col-md-3 bg-light border border-2 border-primary rounded">
                 <h3 class="text-primary">RNA Transportador</h3>
                 <span>Use este espaço para inserir um trecho ou uma pré-visualização do seu texto principal. Você pode simplesmente adicionar o primeiro parágrafo ou criar um resumo.
-
                     Qualquer que seja sua escolha, não entregue tudo ainda. Afinal, você quer que leiam seu texto inteiro.</span>
                 <div><img src="#" alt=""></div>
                 </div>
 
-    <!-- Bases Nitrogenadas -->
-    
-    <!-- Ácidos Nucleicos -->
-
-    <!-- Ribossomos -->
-    <section class="d-flex align-items-center w-100 mt-3">
-        <div class="d-flex flex-column w-50 p-3 gap-4">
-            <h2 class="text-center">Ribossomos</h2>
-            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</span>
-            <h4 class="text-center">Revisão de Organelas</h4>
-            <img src="#" alt="" width="">
-        </div>
-        <img src="#" alt="" class="w-50">
-       </section>
-    <section class="d-flex align-items-center w-100 mt-3">
-        <div class="d-flex flex-column w-50 p-3 gap-4">
-            <h2 class="text-center">Interfase</h2>
-            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</span>
-        </div>
-        <img src="#" alt="" class="w-50">
-       </section>
-
-    <!-- Fases da Interfase -->
-     <!-- Fase G1 -->
-    <!-- Fase S -->
-    <!-- Fase G2 -->
-
-    <!-- Mitose -->
-    <section class="d-flex align-items-center w-100 mt-3">
-        <div class="d-flex flex-column w-50 p-3 gap-4">
-            <h2 class="text-center">Mitose</h2>
-            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</span>
-        </div>
-        <img src="#" alt="" class="w-50">
-       </section>
-
-    <!-- Fases da mitose -->
-
-    <!-- Mitose e Meiose (tabela) -->
-
-</body>
-</html>
+                <div class="texto">
+                  <!-- bases nitrogenadas -->
+                  <h5>Bases Nitrogenadas</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</p><br>
+            
+                  <!-- Acidos nucleicos -->
+                  <h5>Acidos Nucleicos</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</p><br>
+                </div>
+            
+                <!-- Ribossomos -->
+                 <span id="Sintese_proteinas">Síntese de proteínas</span>
+                <section class="d-flex align-items-center w-100 mt-3">
+                    <div class="d-flex flex-column w-50 p-3 gap-4">
+                        <h2>Ribossomos</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porttitor metus. Quisque sagittis vehicula dui id sodales. Nam suscipit bibendum quam, at condimentum ipsum sempre a. Nullam luctus nisi nulla, in pretium velit volutpat id. In mollis nisi eget ipsum hendrerit, et viverra Tellus vulputate. Curabitur nunc nibh, tincidunt ac bibendum eu, porta at metus. Pellentesque habitante morbi tristique senectus et netus et malesuada famas ac turpis egestas.</span>
+                        <h4 class="text-center">Revisão de Organelas</h4>
+                        <img src="#" alt="" width="">
+                    </div>
+                    <img src="#" alt="" class="w-50">
+                   </section>
+            
+                <section class="d-flex align-items-center w-100 mt-3">
+                    <img src="#" alt="" class="w-50">
+                    <div class="d-flex flex-column w-50 p-3 gap-4">
+                        <span id="Ciclo_Celular">Ciclo Celular</span>
+                        <h2>Interfase</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porttitor metus. Quisque sagittis vehicula dui id sodales. Nam suscipit bibendum quam, at condimentum ipsum sempre a. Nullam luctus nisi nulla, in pretium velit volutpat id. In mollis nisi eget ipsum hendrerit, et viverra Tellus vulputate. Curabitur nunc nibh, tincidunt ac bibendum eu, porta at metus. Pellentesque habitante morbi tristique senectus et netus et malesuada famas ac turpis egestas.</span>
+                    </div>
+                   </section>
+            
+                   <div class="texto row mt-3 gap-3 justify-content-center">
+                    <!-- pode ser em h5 ou em span (acho que span ia ficar muito bonito, mas sla) -->
+                    <h5>Fases da Interfase</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</p><br>
+              
+                    <h5>Fase G1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</p><br>
+                    
+                    ]<h5>Fase S</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</p><br>
+                    
+                    <h5>Fase G2</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</p><br>
+                  </div>
+            
+                <!-- Mitose -->
+                 <!-- não deve ter a restrição  de tamanho da tela -->
+                <section class="d-flex align-items-center w-100 mt-3">
+                    <img src="#" alt="" class="w-50">
+                    <div class="d-flex flex-column w-50 p-3 gap-4">
+                        <h2>Mitose</h2>
+                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur facilis repellendus deserunt libero corrupti! Quos autem ad, repellat a perspiciatis, dignissimos vitae, at dolorum sint harum nulla fugit eius molestias?</span>
+                    </div>
+                   </section>
+            
+                <!-- Fases da mitose -->
+                <!-- Aqui devemos colocar os cards com imagens em gif sobre as estapas da mitose, podemos coloca-los com um hover -->
+            
+                <!-- Mitose e Meiose (tabela) -->
+                 <!-- Não deve ter a restrição de tamanho da tela -->
+                 <h2 class="text-center" id="Mitose_meiose">Mitose e Meiose</h2>
+            
+                 <footer id="footer">
+                  <div class="mt-3">
+                    <div class="d-flex justify-content-evenly align-items-center">
+                      
+                      <!-- Seção de contato -->
+                      <div>
+                        <h5>Contato</h5>
+                        <p>Este site foi elaborado por um grupo de estudantes da escola SESI-025,<br>
+                          com o objetivo central de realizar a atividade proposta em sala para um<br>
+                          projeto de biologia, ele foi elaborado a partir de conhecimentos  <br>
+                          adquiridos em aula e pesquisa, não apresentando ou tendo sido feito  por<br>
+                          profissionais da área, podendo conter erros. Por favor, nos contate se <br>
+                          encontrar um ou tiver sujestões de melhorias :)
+                        </p>
+                       </div>
+                       <!-- Seção de Redes Sociais -->
+                        <div>
+                          <h5>Grupo</h5>
+                          <ul class="list-unstyled gap-3">
+                            <li><i class="bi bi-backpack2"></i>  Juliana n°12</li>
+                            <li><i class="bi bi-backpack2"></i> Natalie n°26</li>
+                            <li><i class="bi bi-backpack2"></i> Nathalia n°27</li>
+                            <li><i class="bi bi-backpack2"></i> Vitória n°31</li>
+                          </ul>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex justify-content-evenly align-items-center">
+                    </div>
+                    <hr class="my-3">
+                    <div class="text-center">
+                      <p>&copy; 2024 - Eden . Todos os direitos reservados - Sesi/Senai</p>
+                      <p>
+                        <a href="" class="text-decoration-none text-muted">Política de privacidade</a>
+                        <a href="" class="text-decoration-none text-muted">Termos de uso</a>
+                      </p>
+                    </div>
+                  </div>
+      </footer>
+            
+    </body>
+  </html>
